@@ -229,7 +229,9 @@ a {
 
 .controls {
     width: 25%;
-    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .player-controls {
@@ -291,11 +293,52 @@ a {
     margin: 0 1rem;
 }
 
-.album-icons i{
+.album-icons i {
     opacity: 0.7;
     padding: 0 0.5rem;
 }
 
-.album-icons i:hover{
+.album-icons i:hover {
     opacity: 1;
+}
+
+.controls-icons {
+    width: 50%;
+    /* padding: 0 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+}
+
+.controls-icons i {
+    /* margin: 0 0.2rem; */
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.controls-icons i:hover {
+    opacity: 1;
+}
+
+.controls-playback-bar {
+    width: 50%;
+}
+
+.controls-progress-bar {
+    width: 100%;
+    margin-right: 2rem;
+}
+
+/* .controls-progress-bar {
+    appearance: none;
+} */
+.controls-progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.controls-progress-bar::-webkit-slider-thumb {
+    display: none;
 }
