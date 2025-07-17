@@ -1,7 +1,9 @@
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    overflow: hidden;
+/*     overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: black;
     color: white;
 }
@@ -341,4 +343,57 @@ a {
 
 .controls-progress-bar::-webkit-slider-thumb {
     display: none;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    .main-contant {
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .music-player {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .album, .player, .controls {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .card {
+        margin: 1rem 0.5rem;
+    }
+
+    .sticky-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sticky-nav-opations {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 }
